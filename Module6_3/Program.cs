@@ -13,9 +13,9 @@ namespace Module6_3 // Data Base First
         {
             using (var db = new MCSEntities())
             {
-                foreach (var stopReason in db.AccessTabs)
+                foreach (var r in db.AccessTabs)
                 {
-                    Console.WriteLine(stopReason.strTabName + "\t\t\t\t\t" + stopReason.intTabID);
+                    Console.WriteLine(r.strTabName + "\t\t\t\t\t" + r.strTabGroupName);
                 }
             }
         }
