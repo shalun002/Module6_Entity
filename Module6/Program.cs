@@ -19,6 +19,20 @@ namespace Module6
                 {
                     Console.WriteLine(stopReason.intStopReason + "\t" + stopReason.strReason);
                 }
+
+                //TablesStopReason sr = new TablesStopReason();
+                //sr.strReason = "Ой все";
+
+                //db.TablesStopReasons.Add(sr);
+                //db.SaveChanges();
+
+                //TablesStopReason sr = db.TablesStopReasons.Find(1);
+
+                //sr.strReason = "_*_";
+                //db.SaveChanges();
+
+                //db.TablesStopReasons.Remove(sr);
+                //db.SaveChanges();
             }
         }
     }
