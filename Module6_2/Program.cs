@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module6_2
+namespace Module6_2  //CodeFirst Automatic
 {
     class Program
     {
