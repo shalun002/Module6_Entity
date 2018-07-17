@@ -17,5 +17,7 @@ namespace Module6_2.Model
         public DateTime? Create { get; set; }
 
         public int? TabId { get; set; }
+
+        public virtual AccessTab AccessTab { get; set; }
     }
 }

@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Data.Entity;
 using System.Text;
 using System.Threading.Tasks;
 using Module6;
 using Module6.Model;
-
+using Module6_2.Model;
 
 namespace Module6
 {
@@ -19,7 +20,7 @@ namespace Module6
                 {
                     Console.WriteLine(stopReason.intStopReason + "\t" + stopReason.strReason);
                 }
-
+                
                 //TablesStopReason sr = new TablesStopReason();
                 //sr.strReason = "Ой все";
 
@@ -33,6 +34,7 @@ namespace Module6
 
                 //db.TablesStopReasons.Remove(sr);
                 //db.SaveChanges();
+
             }
         }
     }

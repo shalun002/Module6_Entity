@@ -16,5 +16,9 @@ namespace Module6_2.Model
         public string TabName { get; set; }
 
         public int? GroupId { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<AccessUser> AccessUsers { get; set; }
+
     }
 }
