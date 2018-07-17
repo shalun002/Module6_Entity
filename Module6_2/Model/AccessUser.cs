@@ -18,6 +18,6 @@ namespace Module6_2.Model
 
         public int? TabId { get; set; }
 
-        public virtual AccessTab AccessTab { get; set; }
+        public AccessTab AccessTab { get; set; }
     }
 }

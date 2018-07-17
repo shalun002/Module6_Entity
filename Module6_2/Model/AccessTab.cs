@@ -18,7 +18,7 @@ namespace Module6_2.Model
         public int? GroupId { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<AccessUser> AccessUsers { get; set; }
+        public ICollection<AccessUser> AccessUsers { get; set; }
 
     }
 }

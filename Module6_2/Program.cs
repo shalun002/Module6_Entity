@@ -14,7 +14,6 @@ namespace Module6_2  //CodeFirst Automatic
         {
 
             //Expl1();
-
             Expl2();
 
             //using (mcs db = new mcs())
@@ -48,7 +47,6 @@ namespace Module6_2  //CodeFirst Automatic
 
             Console.WriteLine("Count:" + t);
         }
-
        
         public static void Expl2() // явная загрузка
         {
@@ -59,15 +57,22 @@ namespace Module6_2  //CodeFirst Automatic
                     .Where(w => w.TabId == 1)
                     .FirstOrDefault();
 
+            addExpl(tab);
             // загрузка связанные данные с этой вкладки
-            db.Entry(tab)
-                .Collection(c => c.AccessUsers)
-                .Load();
+            //db.Entry(tab)
+            //    .Collection(c => c.AccessUsers)
+            //    .Load();
 
+
+        }
+
+        public static void addExpl(AccessTab tab)
+        {
             Console.WriteLine(tab.TabName);
+            
             foreach (var tabAccessUser in tab.AccessUsers)
             {
-                Console.WriteLine("\t --> " + tabAccessUser.UserId);
+                Console.WriteLine("\t --> " + tabAccessUser.TabId);
             }
         }
     }
